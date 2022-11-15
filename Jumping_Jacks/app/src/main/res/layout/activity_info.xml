@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Info">
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="118dp"
+        android:layout_height="786dp"
+        android:background="#53AED8"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/homeId"
+            android:layout_width="wrap_content"
+            android:layout_height="21dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="110dp"
+            android:text="@string/home"
+            android:textColor="#4E342E"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintRight_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/mainId"
+            android:layout_width="wrap_content"
+            android:layout_height="21dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="150dp"
+            android:text="@string/main"
+            android:textColor="#4E342E"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintRight_toTopOf="parent"
+            tools:ignore="OnClick,UsingOnClickInXml"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <TextView
+            android:id="@+id/settingId"
+            android:layout_width="wrap_content"
+            android:layout_height="21dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="190dp"
+            android:text="@string/setting"
+            android:textColor="#4E342E"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintRight_toTopOf="parent"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <TextView
+            android:id="@+id/infoId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="230dp"
+            android:text="@string/info"
+            android:textColor="#4E342E"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintRight_toTopOf="parent"
+            tools:layout_editor_absoluteY="0dp"
+            tools:text="INFO:" />
+
+        <ImageView
+            android:id="@+id/JJ_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="650dp"
+            android:layout_marginEnd="10dp"
+            android:contentDescription="@string/img_jj"
+            android:isScrollContainer="false"
+            app:srcCompat="@drawable/jumping_man1" />
+
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/lbl_InfoLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="@string/jumping_jacks_info"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/mssgBox_frame"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.741"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <FrameLayout
+        android:id="@+id/mssgBox_frame"
+        android:layout_width="215dp"
+        android:layout_height="204dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.849"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.326">
+
+        <TextView
+            android:id="@+id/MsgTextBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/this_jumping_jack_app_will_help_users_to_keep_track_of_your_endurance_throughout_the_week_and_their_weekly_weight_loss_the_user_will_enter_their_weight_age_and_birthday_and_the_app_will_give_your_weekly_jumping_jacks_and_total_weight"
+            app:emojiCompatEnabled="false" />
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
